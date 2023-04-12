@@ -1,0 +1,32 @@
+Resource: https://www.youtube.com/watch?v=i5JykvxUk_A&ab_channel=CalebCurry
+
+Create virtual Environment
+python3 -m venv .venv
+.venv\Scripts\activate.bat
+
+Install dependecies
+pip install django
+pip install djangorestframework
+
+django-admin startproject drinks .
+python manage.py runserver
+
+// migrations represent the data structure for databases, those need to be created in database
+python manage.py migrate
+
+// create an admin
+python manage.py createsuperuser --email chill@awesome.com --username _siummy
+Password: 1234
+
+// Create a drinks model model.py
+// After creating the model at drinks
+python manage.py makemigrations drinks
+// To apply the data structure drinks in database
+python manage.py migrate
+
+// To show the database at admin sqlite, create admin.py
+// Register the model (Drink) in admin.py
+
+// Make serialiser to return the model through api (serializers.py)
+
+

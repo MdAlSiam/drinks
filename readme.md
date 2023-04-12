@@ -1,0 +1,1 @@
+Basic CRUD Operations on a Django API
